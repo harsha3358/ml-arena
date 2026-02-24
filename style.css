@@ -1,0 +1,178 @@
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+    min-height: 100vh;
+    padding: 40px;
+    transition: 0.3s ease;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+    background: linear-gradient(45deg, #6366f1, #ec4899);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+hr {
+    margin: 30px 0;
+    border: none;
+    height: 1px;
+    background: #334155;
+}
+
+/* =========================
+   INPUTS
+========================= */
+
+input, select {
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: none;
+    width: 250px;
+}
+
+input[type="file"] {
+    background: #334155;
+    color: white;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 8px 5px;
+    background: linear-gradient(45deg, #6366f1, #ec4899);
+    color: white;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* =========================
+   DASHBOARD LIST
+========================= */
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    background: #1e293b;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* =========================
+   CARDS (OPTIONAL)
+========================= */
+
+.card {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* =========================
+   PROGRESS BAR
+========================= */
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background: #334155;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.progress-fill {
+    height: 100%;
+    width: 0%;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #6366f1, #ec4899);
+    transition: width 0.4s ease;
+}
+
+/* =========================
+   LIGHT THEME
+========================= */
+
+.light {
+    background: #f1f5f9;
+    color: black;
+}
+
+.light h1 {
+    -webkit-text-fill-color: initial;
+    background: none;
+    color: #111;
+}
+
+.light input,
+.light select {
+    background: white;
+    color: black;
+}
+
+.light li {
+    background: white;
+    color: black;
+}
+
+.light .card {
+    background: white;
+}
+
+.light .progress-bar {
+    background: #ddd;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    input, select {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+}
